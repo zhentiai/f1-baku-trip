@@ -6,17 +6,7 @@
   <title>Формула 1 в Баку — Сентябрь 2025</title>
   <style>
     html { scroll-behavior: smooth; }
-    body {
-      background-image: url('background.png');
-      background-repeat: repeat;
-      background-size: contain;
-      background-position: center top;
-      font-family: Arial, sans-serif;
-      background-color: #fff8f0;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
+    body { font-family: Arial, sans-serif; background-color: #fff8f0; margin: 0; padding: 0; color: #333; }
     header {
       background: url('cover.jpg') center/cover no-repeat;
       height: 100vh;
@@ -26,33 +16,9 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background-size: cover;
-      background-position: center;
-      background-attachment: scroll;
     }
-
-    @media (max-width: 768px) {
-      header {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center top;
-        height: auto;
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-      color: #f5f5f5;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-    }
-    header p {
-      font-size: 1.5em;
-      color: #f5f5f5;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-    }
+    header h1 { font-size: 3em; margin: 0; }
+    header p { font-size: 1.5em; }
     header a {
       margin-top: 20px;
       padding: 12px 24px;
@@ -65,14 +31,7 @@
     section#schedule {
       scroll-margin-top: 120px;
     }
-    section {
-      background-color: #fff8f0ee;
-      backdrop-filter: blur(2px);
-      border-radius: 12px;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
+    section { max-width: 800px; margin: 40px auto; padding: 0 20px; }
     h2 { color: #d40000; }
     ul { list-style: none; padding: 0; }
     li { margin: 10px 0; }
@@ -83,17 +42,64 @@
 </head>
 <body>
   <header>
-  <nav style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); background: rgba(255,255,255,0.9); padding: 8px 16px; border-radius: 8px; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; font-size: 0.9em;">
-    <a href="#day1">День 1</a>
-    <a href="#day2">День 2</a>
-    <a href="#day3">День 3</a>
-    <a href="#day4">День 4</a>
-    <a href="#schedule">Все дни</a>
-  </nav>
     <h1>Формула 1 в Баку</h1>
     <p>Наша незабываемая поездка — Сентябрь 2025</p>
     <a href="#schedule">Программа поездки ↓</a>
     <a href="plan.pdf" download style="margin-top: 10px;">Скачать PDF-план</a>
   </header>
+
+  <section id="schedule">
+    <h2><a href="plan.pdf" download>Программа поездки</a></h2>
+
+    <h3>День 1 — 17 сентября</h3>
+    <ul>
+      <li>16:30 — Прилёт в Баку</li>
+      <li>18:00 — Заселение в отель</li>
+      <li>19:30 — Прогулка по <a href="https://tinyurl.com/2kfv9j8u" target="_blank">Приморскому бульвару</a></li>
+      <li>20:30 — Ужин в <a href="https://sahil.az/" target="_blank">SAHiL</a></li>
+    </ul>
+
+    <h3>День 2 — 18 сентября</h3>
+    <ul>
+      <li>09:00 — <a href="https://whc.unesco.org/en/list/958" target="_blank">Ичери Шехер</a></li>
+      <li>12:00 — Обед в <a href="https://artclub.az/restaurant" target="_blank">Art Club</a></li>
+      <li>14:00 — <a href="https://heydaraliyevcenter.az/" target="_blank">Центр Гейдара Алиева</a></li>
+      <li>19:30 — Ужин в <a href="https://www.fireworks.az/en/" target="_blank">Fireworks</a></li>
+      <li>21:30 — <a href="https://tinyurl.com/3vxex96x" target="_blank">360 Bar</a></li>
+    </ul>
+
+    <h3>День 3 — 19 сентября</h3>
+    <ul>
+      <li>09:30 — Свободные заезды Формулы 1</li>
+      <li>13:30 — Обед в фан-зоне</li>
+      <li>19:30 — Ужин в <a href="https://tinyurl.com/mu46sutb" target="_blank">Zafferano</a></li>
+      <li>21:30 — Вечеринка Формулы 1</li>
+    </ul>
+
+    <h3>День 4 — 20 сентября</h3>
+    <ul>
+      <li>10:30 — Тренировка F1</li>
+      <li>14:00 — Квалификация</li>
+      <li>15:30 — Обед в <a href="https://tinyurl.com/stwv9wrj" target="_blank">Dolma</a></li>
+      <li>19:30 — Ужин в <a href="https://tinyurl.com/4buu9swa" target="_blank">Marani</a></li>
+      <li>21:30 — <a href="https://tinyurl.com/bdecv8xp" target="_blank">Клуб Eleven</a></li>
+    </ul>
+
+    <h3>День 5 — 21 сентября</h3>
+    <ul>
+      <li>10:00 — Парад пилотов</li>
+      <li>13:00 — Гонка Формулы 1</li>
+      <li>15:30 — Обед в <a href="https://www.anadolu.az/" target="_blank">Anadolu</a></li>
+    </ul>
+
+    <h3>День 6 — 22 сентября</h3>
+    <ul>
+      <li>05:30 — Выезд в аэропорт</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Formula 1 Trip Baku — All rights reserved.
+  </footer>
 </body>
 </html>
