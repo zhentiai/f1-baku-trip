@@ -5,22 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Формула 1 в Баку — Сентябрь 2025</title>
   <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: Arial, sans-serif; background-color: #fff8f0; margin: 0; padding: 0; color: #333; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+      background: url('background.png') repeat;
+      background-size: contain;
+      color: #333;
+    }
     header {
-      background: url('cover.jpg') center/cover no-repeat;
+      background: url('cover.png') no-repeat center top;
+      background-size: cover;
       height: 100vh;
-      color: white;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       text-align: center;
+      padding: 20px;
+      color: #fff;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     }
-    header h1 { font-size: 3em; margin: 0; }
-    header p { font-size: 1.5em; }
     header a {
-      margin-top: 20px;
+      margin: 8px;
       padding: 12px 24px;
       background: #ffcc00;
       color: #000;
@@ -28,78 +36,137 @@
       border-radius: 8px;
       font-weight: bold;
     }
-    section#schedule {
-      scroll-margin-top: 120px;
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 20px;
     }
-    section { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-    h2 { color: #d40000; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 10px 0; }
-    a { color: #d40000; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { text-align: center; padding: 30px; font-size: 0.9em; color: #888; }
+    nav a {
+      background: #ffcc00;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+    }
+    section {
+      background: #fff8f0ee;
+      backdrop-filter: blur(2px);
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 40px 20px;
+      scroll-margin-top: 80px;
+    }
+    h2, h3 {
+      color: #d40000;
+      font-size: 2.4em;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.5em;
+    }
+    li {
+      margin: 10px 0;
+    }
+    a {
+      color: #d40000;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #888;
+    }
+    #currency-widget {
+      margin: 30px auto;
+      max-width: 800px;
+      padding: 10px;
+      text-align: center;
+    }
   </style>
 </head>
-<body>
+<body id="top">
+  <main>
   <header>
     <h1>Формула 1 в Баку</h1>
     <p>Наша незабываемая поездка — Сентябрь 2025</p>
-    <a href="#schedule">Программа поездки ↓</a>
-    <a href="plan.pdf" download style="margin-top: 10px;">Скачать PDF-план</a>
+    <a href="#day1">Программа поездки ↓</a>
+    <a href="plan.pdf" download>Скачать PDF-план</a>
+    <a href="https://ati.az/ru/blog/common-phrases" target="_blank" style="background:#ffcc00; padding:12px 24px; border-radius:8px; font-weight:bold; color:#000; text-decoration:none;">📘 Разговорник</a>
   </header>
 
-  <section id="schedule">
-    <h2><a href="plan.pdf" download>Программа поездки</a></h2>
+  <nav role="navigation" aria-label="Навигация по дням">
+    <a href="#day1">День 1</a>
+    <a href="#day2">День 2</a>
+    <a href="#day3">День 3</a>
+    <a href="#day4">День 4</a>
+    <a href="#day5">День 5</a>
+    <a href="#day6">День 6</a>
+  </nav>
 
+  <div id="currency-widget">
+    <iframe style="width:100%; max-width:100%; border:0; overflow:hidden; background-color:transparent; height:300px" scrolling="no" src="https://fortraders.org/informers/getInformer?st=8&cat=7&title=%D0%9A%D1%83%D1%80%D1%81%D1%8B%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%20%D0%A6%D0%91%20%D0%A0%D0%A4&texts=%7B%22toolTitle%22%3A%22%D0%92%D0%B0%D0%BB%D1%8E%D1%82%D0%B0%22%2C%22todayCourse%22%3A%22%22%7D&mult=1&showGetBtn=0&hideHeader=0&hideDate=0&w=0&codes=1&colors=false&items=2%2C21%2C10&columns=todayCourse&toCur=11111"></iframe>
+  </div>
+
+  <section id="day1">
     <h3>День 1 — 17 сентября</h3>
     <ul>
       <li>16:30 — Прилёт в Баку</li>
       <li>18:00 — Заселение в отель</li>
-      <li>19:30 — Прогулка по <a href="https://tinyurl.com/2kfv9j8u" target="_blank">Приморскому бульвару</a></li>
-      <li>20:30 — Ужин в <a href="https://sahil.az/" target="_blank">SAHiL</a></li>
+      <li>19:30 — Прогулка по <a href="https://tinyurl.com/2kfv9j8u">Приморскому бульвару</a></li>
+      <li>20:30 — Ужин в <a href="https://sahil.az/">SAHiL</a></li>
     </ul>
 
-    <h3>День 2 — 18 сентября</h3>
+    <h3 id="day2">День 2 — 18 сентября</h3>
     <ul>
-      <li>09:00 — <a href="https://whc.unesco.org/en/list/958" target="_blank">Ичери Шехер</a></li>
-      <li>12:00 — Обед в <a href="https://artclub.az/restaurant" target="_blank">Art Club</a></li>
-      <li>14:00 — <a href="https://heydaraliyevcenter.az/" target="_blank">Центр Гейдара Алиева</a></li>
-      <li>19:30 — Ужин в <a href="https://www.fireworks.az/en/" target="_blank">Fireworks</a></li>
-      <li>21:30 — <a href="https://tinyurl.com/3vxex96x" target="_blank">360 Bar</a></li>
+      <li>09:00 — <a href="https://whc.unesco.org/en/list/958">Ичери Шехер</a></li>
+      <li>12:00 — Обед в <a href="https://artclub.az/restaurant">Art Club</a></li>
+      <li>14:00 — <a href="https://heydaraliyevcenter.az/">Центр Гейдара Алиева</a></li>
+      <li>19:30 — Ужин в <a href="https://www.fireworks.az/en/">Fireworks</a></li>
+      <li>21:30 — <a href="https://tinyurl.com/3vxex96x">360 Bar</a></li>
     </ul>
 
-    <h3>День 3 — 19 сентября</h3>
+    <h3 id="day3">День 3 — 19 сентября</h3>
     <ul>
       <li>09:30 — Свободные заезды Формулы 1</li>
       <li>13:30 — Обед в фан-зоне</li>
-      <li>19:30 — Ужин в <a href="https://tinyurl.com/mu46sutb" target="_blank">Zafferano</a></li>
-      <li>21:30 — Вечеринка Формулы 1</li>
+      <li>19:30 — Ужин в <a href="https://tinyurl.com/mu46sutb">Zafferano</a></li>
+      <li>21:30 — <a href="https://tinyurl.com/bdecv8xp">Клуб Eleven</a></li>
     </ul>
 
-    <h3>День 4 — 20 сентября</h3>
+    <h3 id="day4">День 4 — 20 сентября</h3>
     <ul>
       <li>10:30 — Тренировка F1</li>
       <li>14:00 — Квалификация</li>
-      <li>15:30 — Обед в <a href="https://tinyurl.com/stwv9wrj" target="_blank">Dolma</a></li>
-      <li>19:30 — Ужин в <a href="https://tinyurl.com/4buu9swa" target="_blank">Marani</a></li>
-      <li>21:30 — <a href="https://tinyurl.com/bdecv8xp" target="_blank">Клуб Eleven</a></li>
+      <li>15:30 — Обед в <a href="https://tinyurl.com/stwv9wrj">Dolma</a></li>
+      <li>19:30 — Ужин в <a href="https://tinyurl.com/4buu9swa">Marani</a></li>
     </ul>
 
-    <h3>День 5 — 21 сентября</h3>
+    <h3 id="day5">День 5 — 21 сентября</h3>
     <ul>
       <li>10:00 — Парад пилотов</li>
       <li>13:00 — Гонка Формулы 1</li>
-      <li>15:30 — Обед в <a href="https://www.anadolu.az/" target="_blank">Anadolu</a></li>
+      <li>15:30 — Обед в <a href="https://www.anadolu.az/">Anadolu</a></li>
     </ul>
 
-    <h3>День 6 — 22 сентября</h3>
+    <h3 id="day6">День 6 — 22 сентября</h3>
     <ul>
       <li>05:30 — Выезд в аэропорт</li>
     </ul>
-  </section>
 
+    <p style="text-align:center; margin-top: 40px;"><a href="#top" style="display:inline-block; background:#ffcc00; padding:10px 20px; border-radius:8px; font-weight:bold; color:#000; text-decoration:none;">↑ Назад</a></p>
+  </section>
+  </main>
   <footer>
-    © 2025 Formula 1 Trip Baku — All rights reserved.
+    © 2025 Formula 1 Trip Baku
   </footer>
 </body>
 </html>
